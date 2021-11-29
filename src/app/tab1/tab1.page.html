@@ -13,5 +13,38 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
+<!-- 
+  <ion-button (click)="geoInformation()" color="danger">
+    Obtener ubicacion
+  </ion-button> -->
+
+  <ion-item>
+    <strong>Informacion</strong>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Latitud</ion-label>
+    <ion-badge color="secondary">{{lat}}</ion-badge>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Longitud</ion-label>
+    <ion-badge color="tertiary">{{long}}</ion-badge>
+  </ion-item>
+
+  <ion-item>
+    <strong>Direccion</strong>
+  </ion-item>
+
+  <ion-item>
+    {{ address }}
+  </ion-item>  
+
+  <ion-item>
+    <ion-label><strong>Precision</strong></ion-label>
+    <ion-badge>{{ accuracy }}</ion-badge>
+  </ion-item>
+
+
 </ion-content>
